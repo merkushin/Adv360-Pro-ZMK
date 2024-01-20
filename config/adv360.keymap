@@ -60,11 +60,11 @@
 
         layer_fn {
             bindings = <
- &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                          &tog 1                                                                 &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans            &kp C_BRIGHTNESS_INC                                                  &kp C_BRIGHTNESS_DEC  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans                 &kp C_VOLUME_UP  &trans  &trans                  &trans  &trans     &kp C_VOLUME_DOWN  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                          &trans                  &trans                                &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans                  &trans  &trans                &trans          &trans  &trans   &trans   &trans   &trans
+ &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                          &tog 1                                                                 &mo 3          &kp F7         &kp F8         &kp F9        &kp F10          &kp F11  &kp F12
+ &trans  &trans  &trans  &trans  &trans  &trans            &kp C_BRIGHTNESS_INC                                                  &kp C_BRIGHTNESS_DEC          &trans         &trans         &trans         &trans           &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                 &kp C_VOLUME_UP  &trans  &trans                  &trans  &trans     &kp C_VOLUME_DOWN  &macro_dquotes  &macro_quotes  &macro_braces  &macro_parens  &macro_brackets   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                          &trans                  &trans                                        &trans         &trans         &trans         &trans           &trans   &trans
+ &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans                  &trans  &trans                &trans                         &trans         &trans         &trans           &trans   &trans
             >;
         };
 
@@ -74,7 +74,17 @@
   &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+  &none         &none         &none         &none         &none                                &to 4   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+            >;
+        };
+
+        layer_Roblox {
+            bindings = <
+     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &to 0                                                              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+    &kp TAB         &kp Q         &none         &kp W         &kp E         &kp R               &trans                                                              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+    &kp ESC        &trans         &kp A         &kp S         &kp D         &kp Y               &trans  &kp NUMBER_6  &kp NUMBER_7                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp LSHIFT         &kp Z         &kp X         &kp C         &kp M         &kp B                                     &kp NUMBER_8                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+     &trans        &trans        &trans        &trans        &trans                          &kp SPACE        &trans  &kp NUMBER_9                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
